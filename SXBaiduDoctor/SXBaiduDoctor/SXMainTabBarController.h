@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  SXMainTabBarController.h
 //  SXBaiduDoctor
 //
-//  Created by 董 尚先 on 15/4/8.
+//  Created by 董 尚先 on 15/4/9.
 //  Copyright (c) 2015年 shangxianDante. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SXMainTabBarController : UITabBarController
 
 @end
-

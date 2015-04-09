@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		1D3443E51AD57A6200908D80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3443E41AD57A6200908D80 /* main.m */; };
 		1D3443E81AD57A6200908D80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3443E71AD57A6200908D80 /* AppDelegate.m */; };
-		1D3443EB1AD57A6200908D80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3443EA1AD57A6200908D80 /* ViewController.m */; };
 		1D3443EE1AD57A6200908D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3443EC1AD57A6200908D80 /* Main.storyboard */; };
 		1D3443F01AD57A6200908D80 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3443EF1AD57A6200908D80 /* Images.xcassets */; };
 		1D3443F31AD57A6200908D80 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D3443F11AD57A6200908D80 /* LaunchScreen.xib */; };
 		1D3443FF1AD57A6200908D80 /* SXBaiduDoctorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3443FE1AD57A6200908D80 /* SXBaiduDoctorTests.m */; };
+		1D7781B21AD618C300528041 /* SXMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781B11AD618C300528041 /* SXMainTabBarController.m */; };
+		1D7781B91AD61DA500528041 /* SXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781B81AD61DA500528041 /* SXTabBar.m */; };
+		1D7781BC1AD61DB800528041 /* SXBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781BB1AD61DB800528041 /* SXBarButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		1D3443E41AD57A6200908D80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1D3443E61AD57A6200908D80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3443E71AD57A6200908D80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D3443E91AD57A6200908D80 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1D3443EA1AD57A6200908D80 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1D3443ED1AD57A6200908D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D3443EF1AD57A6200908D80 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1D3443F21AD57A6200908D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1D3443F81AD57A6200908D80 /* SXBaiduDoctorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SXBaiduDoctorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3443FD1AD57A6200908D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D3443FE1AD57A6200908D80 /* SXBaiduDoctorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXBaiduDoctorTests.m; sourceTree = "<group>"; };
+		1D7781B01AD618C300528041 /* SXMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXMainTabBarController.h; sourceTree = "<group>"; };
+		1D7781B11AD618C300528041 /* SXMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXMainTabBarController.m; sourceTree = "<group>"; };
+		1D7781B71AD61DA500528041 /* SXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTabBar.h; sourceTree = "<group>"; };
+		1D7781B81AD61DA500528041 /* SXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTabBar.m; sourceTree = "<group>"; };
+		1D7781BA1AD61DB800528041 /* SXBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXBarButton.h; sourceTree = "<group>"; };
+		1D7781BB1AD61DB800528041 /* SXBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXBarButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +87,15 @@
 		1D3443E11AD57A6200908D80 /* SXBaiduDoctor */ = {
 			isa = PBXGroup;
 			children = (
+				1D7781BD1AD6220600528041 /* Classes */,
+				1D7781B01AD618C300528041 /* SXMainTabBarController.h */,
+				1D7781B11AD618C300528041 /* SXMainTabBarController.m */,
+				1D7781B71AD61DA500528041 /* SXTabBar.h */,
+				1D7781B81AD61DA500528041 /* SXTabBar.m */,
+				1D7781BA1AD61DB800528041 /* SXBarButton.h */,
+				1D7781BB1AD61DB800528041 /* SXBarButton.m */,
 				1D3443E61AD57A6200908D80 /* AppDelegate.h */,
 				1D3443E71AD57A6200908D80 /* AppDelegate.m */,
-				1D3443E91AD57A6200908D80 /* ViewController.h */,
-				1D3443EA1AD57A6200908D80 /* ViewController.m */,
 				1D3443EC1AD57A6200908D80 /* Main.storyboard */,
 				1D3443EF1AD57A6200908D80 /* Images.xcassets */,
 				1D3443F11AD57A6200908D80 /* LaunchScreen.xib */,
@@ -117,6 +128,53 @@
 				1D3443FD1AD57A6200908D80 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D7781BD1AD6220600528041 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D7781C01AD6220600528041 /* main */,
+				1D7781C11AD6220600528041 /* other */,
+				1D7781BE1AD6220600528041 /* guide */,
+				1D7781BF1AD6220600528041 /* individual */,
+				1D7781C21AD6220600528041 /* yuyue */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1D7781BE1AD6220600528041 /* guide */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = guide;
+			sourceTree = "<group>";
+		};
+		1D7781BF1AD6220600528041 /* individual */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = individual;
+			sourceTree = "<group>";
+		};
+		1D7781C01AD6220600528041 /* main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		1D7781C11AD6220600528041 /* other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		1D7781C21AD6220600528041 /* yuyue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = yuyue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +221,7 @@
 		1D3443D71AD57A6200908D80 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SX;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = shangxianDante;
 				TargetAttributes = {
@@ -219,9 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D3443EB1AD57A6200908D80 /* ViewController.m in Sources */,
+				1D7781BC1AD61DB800528041 /* SXBarButton.m in Sources */,
+				1D7781B91AD61DA500528041 /* SXTabBar.m in Sources */,
 				1D3443E81AD57A6200908D80 /* AppDelegate.m in Sources */,
 				1D3443E51AD57A6200908D80 /* main.m in Sources */,
+				1D7781B21AD618C300528041 /* SXMainTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SXBaiduDoctor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SXBaiduDoctor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
