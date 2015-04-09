@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1D199F9F1AD644B0009D902F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D199F9E1AD644B0009D902F /* UIView+Frame.m */; };
+		1D199FA11AD65B94009D902F /* SXTbvHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D199FA01AD65B94009D902F /* SXTbvHeaderView.xib */; };
+		1D199FA41AD65D36009D902F /* SXTbvHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D199FA31AD65D36009D902F /* SXTbvHeaderView.m */; };
+		1D199FA71AD65E27009D902F /* SXMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D199FA61AD65E27009D902F /* SXMeController.m */; };
 		1D3443E51AD57A6200908D80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3443E41AD57A6200908D80 /* main.m */; };
 		1D3443E81AD57A6200908D80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3443E71AD57A6200908D80 /* AppDelegate.m */; };
 		1D3443EE1AD57A6200908D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3443EC1AD57A6200908D80 /* Main.storyboard */; };
@@ -32,6 +35,11 @@
 /* Begin PBXFileReference section */
 		1D199F9D1AD644B0009D902F /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		1D199F9E1AD644B0009D902F /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		1D199FA01AD65B94009D902F /* SXTbvHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SXTbvHeaderView.xib; sourceTree = "<group>"; };
+		1D199FA21AD65D36009D902F /* SXTbvHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTbvHeaderView.h; sourceTree = "<group>"; };
+		1D199FA31AD65D36009D902F /* SXTbvHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTbvHeaderView.m; sourceTree = "<group>"; };
+		1D199FA51AD65E27009D902F /* SXMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXMeController.h; sourceTree = "<group>"; };
+		1D199FA61AD65E27009D902F /* SXMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXMeController.m; sourceTree = "<group>"; };
 		1D3443DF1AD57A6200908D80 /* SXBaiduDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SXBaiduDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3443E31AD57A6200908D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D3443E41AD57A6200908D80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,9 +105,14 @@
 				1D7781B81AD61DA500528041 /* SXTabBar.m */,
 				1D7781BA1AD61DB800528041 /* SXBarButton.h */,
 				1D7781BB1AD61DB800528041 /* SXBarButton.m */,
+				1D199FA51AD65E27009D902F /* SXMeController.h */,
+				1D199FA61AD65E27009D902F /* SXMeController.m */,
 				1D3443E61AD57A6200908D80 /* AppDelegate.h */,
 				1D3443E71AD57A6200908D80 /* AppDelegate.m */,
 				1D3443EC1AD57A6200908D80 /* Main.storyboard */,
+				1D199FA21AD65D36009D902F /* SXTbvHeaderView.h */,
+				1D199FA31AD65D36009D902F /* SXTbvHeaderView.m */,
+				1D199FA01AD65B94009D902F /* SXTbvHeaderView.xib */,
 				1D3443EF1AD57A6200908D80 /* Images.xcassets */,
 				1D3443F11AD57A6200908D80 /* LaunchScreen.xib */,
 				1D3443E21AD57A6200908D80 /* Supporting Files */,
@@ -266,6 +279,7 @@
 				1D3443EE1AD57A6200908D80 /* Main.storyboard in Resources */,
 				1D3443F31AD57A6200908D80 /* LaunchScreen.xib in Resources */,
 				1D3443F01AD57A6200908D80 /* Images.xcassets in Resources */,
+				1D199FA11AD65B94009D902F /* SXTbvHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,8 +301,10 @@
 				1D7781BC1AD61DB800528041 /* SXBarButton.m in Sources */,
 				1D7781B91AD61DA500528041 /* SXTabBar.m in Sources */,
 				1D3443E81AD57A6200908D80 /* AppDelegate.m in Sources */,
+				1D199FA71AD65E27009D902F /* SXMeController.m in Sources */,
 				1D3443E51AD57A6200908D80 /* main.m in Sources */,
 				1D7781B21AD618C300528041 /* SXMainTabBarController.m in Sources */,
+				1D199FA41AD65D36009D902F /* SXTbvHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
