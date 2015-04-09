@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D199F9F1AD644B0009D902F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D199F9E1AD644B0009D902F /* UIView+Frame.m */; };
 		1D3443E51AD57A6200908D80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3443E41AD57A6200908D80 /* main.m */; };
 		1D3443E81AD57A6200908D80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3443E71AD57A6200908D80 /* AppDelegate.m */; };
 		1D3443EE1AD57A6200908D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3443EC1AD57A6200908D80 /* Main.storyboard */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D199F9D1AD644B0009D902F /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		1D199F9E1AD644B0009D902F /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		1D3443DF1AD57A6200908D80 /* SXBaiduDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SXBaiduDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3443E31AD57A6200908D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D3443E41AD57A6200908D80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 		1D7781C11AD6220600528041 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				1D199F9D1AD644B0009D902F /* UIView+Frame.h */,
+				1D199F9E1AD644B0009D902F /* UIView+Frame.m */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D199F9F1AD644B0009D902F /* UIView+Frame.m in Sources */,
 				1D7781BC1AD61DB800528041 /* SXBarButton.m in Sources */,
 				1D7781B91AD61DA500528041 /* SXTabBar.m in Sources */,
 				1D3443E81AD57A6200908D80 /* AppDelegate.m in Sources */,

@@ -21,6 +21,7 @@
 
 @property (nonatomic,weak) id<SXTabBarDelegate> delegate;
 
-- (void)addBarButtonWithNorName:(NSString *)nor andDisName:(NSString *)dis;
+- (void)addImageView;
+- (void)addBarButtonWithNorName:(NSString *)nor andDisName:(NSString *)dis andTitle:(NSString *)title;
 
 @end
