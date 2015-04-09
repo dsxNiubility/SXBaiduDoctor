@@ -12,6 +12,7 @@
 		1D199FA41AD65D36009D902F /* SXTbvHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D199FA31AD65D36009D902F /* SXTbvHeaderView.m */; };
 		1D199FA71AD65E27009D902F /* SXMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D199FA61AD65E27009D902F /* SXMeController.m */; };
 		1D199FAA1AD66592009D902F /* SXAppointmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D199FA91AD66592009D902F /* SXAppointmentController.m */; };
+		1D199FAD1AD6862C009D902F /* SXGuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D199FAC1AD6862C009D902F /* SXGuideController.m */; };
 		1D3443E51AD57A6200908D80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3443E41AD57A6200908D80 /* main.m */; };
 		1D3443E81AD57A6200908D80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3443E71AD57A6200908D80 /* AppDelegate.m */; };
 		1D3443EE1AD57A6200908D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3443EC1AD57A6200908D80 /* Main.storyboard */; };
@@ -43,6 +44,8 @@
 		1D199FA61AD65E27009D902F /* SXMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SXMeController.m; path = ../../SXMeController.m; sourceTree = "<group>"; };
 		1D199FA81AD66592009D902F /* SXAppointmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXAppointmentController.h; sourceTree = "<group>"; };
 		1D199FA91AD66592009D902F /* SXAppointmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXAppointmentController.m; sourceTree = "<group>"; };
+		1D199FAB1AD6862C009D902F /* SXGuideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXGuideController.h; sourceTree = "<group>"; };
+		1D199FAC1AD6862C009D902F /* SXGuideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXGuideController.m; sourceTree = "<group>"; };
 		1D3443DF1AD57A6200908D80 /* SXBaiduDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SXBaiduDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3443E31AD57A6200908D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D3443E41AD57A6200908D80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 		1D7781BE1AD6220600528041 /* guide */ = {
 			isa = PBXGroup;
 			children = (
+				1D199FAB1AD6862C009D902F /* SXGuideController.h */,
+				1D199FAC1AD6862C009D902F /* SXGuideController.m */,
 			);
 			path = guide;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				1D7781B91AD61DA500528041 /* SXTabBar.m in Sources */,
 				1D3443E81AD57A6200908D80 /* AppDelegate.m in Sources */,
 				1D199FAA1AD66592009D902F /* SXAppointmentController.m in Sources */,
+				1D199FAD1AD6862C009D902F /* SXGuideController.m in Sources */,
 				1D199FA71AD65E27009D902F /* SXMeController.m in Sources */,
 				1D3443E51AD57A6200908D80 /* main.m in Sources */,
 				1D7781B21AD618C300528041 /* SXMainTabBarController.m in Sources */,
