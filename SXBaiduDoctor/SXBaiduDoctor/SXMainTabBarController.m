@@ -33,6 +33,8 @@
     [tabBar addBarButtonWithNorName:@"menu_guide_default" andDisName:@"menu_guide_current" andTitle:@"智能导诊"];
     [tabBar addBarButtonWithNorName:@"menu_yuyue_default" andDisName:@"menu_yuyue_current" andTitle:@"预约医生"];
     [tabBar addBarButtonWithNorName:@"menu_individual_default" andDisName:@"menu_individual_current" andTitle:@"个人中心"];
+    
+    self.selectedIndex = 1;
 }
 
 #pragma mark - ******************** SXTabBarDelegate代理方法

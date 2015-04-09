@@ -22,7 +22,7 @@
 {
     self.backgroundColor = [UIColor colorWithRed:220/255.0 green:220/255.0 blue:220/255.0 alpha:1];
     UIImageView *imgView = [[UIImageView alloc]init];
-    imgView.image = [UIImage imageNamed:@"index_footer_current_bg_left"];
+    imgView.image = [UIImage imageNamed:@"index_footer_current_bg_middle"];
     self.imgView = imgView;
     [self addSubview:imgView];
 }
@@ -44,7 +44,8 @@
     [self addSubview:btn];
     
     // 让第一个按钮默认为选中状态
-    if (self.subviews.count == 2) {
+    if (self.subviews.count == 3) {
+        btn.tag = 1;
         [self btnClick:btn];
     }
 }
