@@ -22,6 +22,7 @@
 		1D7781B21AD618C300528041 /* SXMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781B11AD618C300528041 /* SXMainTabBarController.m */; };
 		1D7781B91AD61DA500528041 /* SXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781B81AD61DA500528041 /* SXTabBar.m */; };
 		1D7781BC1AD61DB800528041 /* SXBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781BB1AD61DB800528041 /* SXBarButton.m */; };
+		1DA13F371AD696C90012F6E8 /* SXSexButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA13F361AD696C90012F6E8 /* SXSexButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		1D7781B81AD61DA500528041 /* SXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTabBar.m; sourceTree = "<group>"; };
 		1D7781BA1AD61DB800528041 /* SXBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXBarButton.h; sourceTree = "<group>"; };
 		1D7781BB1AD61DB800528041 /* SXBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXBarButton.m; sourceTree = "<group>"; };
+		1DA13F351AD696C90012F6E8 /* SXSexButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXSexButton.h; sourceTree = "<group>"; };
+		1DA13F361AD696C90012F6E8 /* SXSexButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXSexButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 			children = (
 				1D199FAB1AD6862C009D902F /* SXGuideController.h */,
 				1D199FAC1AD6862C009D902F /* SXGuideController.m */,
+				1DA13F351AD696C90012F6E8 /* SXSexButton.h */,
+				1DA13F361AD696C90012F6E8 /* SXSexButton.m */,
 			);
 			path = guide;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 				1D199FAD1AD6862C009D902F /* SXGuideController.m in Sources */,
 				1D199FA71AD65E27009D902F /* SXMeController.m in Sources */,
 				1D3443E51AD57A6200908D80 /* main.m in Sources */,
+				1DA13F371AD696C90012F6E8 /* SXSexButton.m in Sources */,
 				1D7781B21AD618C300528041 /* SXMainTabBarController.m in Sources */,
 				1D199FA41AD65D36009D902F /* SXTbvHeaderView.m in Sources */,
 			);
