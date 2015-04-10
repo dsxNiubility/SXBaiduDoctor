@@ -139,5 +139,8 @@
     self.headBackBtn.hidden = YES;
 }
 
+- (IBAction)listBtnClick:(UIButton *)sender {
+    NSLog(@"跳转列表");
+}
 
 @end

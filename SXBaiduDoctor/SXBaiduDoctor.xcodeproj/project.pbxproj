@@ -19,6 +19,10 @@
 		1D3443F01AD57A6200908D80 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3443EF1AD57A6200908D80 /* Images.xcassets */; };
 		1D3443F31AD57A6200908D80 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D3443F11AD57A6200908D80 /* LaunchScreen.xib */; };
 		1D3443FF1AD57A6200908D80 /* SXBaiduDoctorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3443FE1AD57A6200908D80 /* SXBaiduDoctorTests.m */; };
+		1D633FFC1AD7B45C005E8BF6 /* SXSickController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D633FFB1AD7B45C005E8BF6 /* SXSickController.m */; };
+		1D633FFF1AD7B47F005E8BF6 /* SXSickKindCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D633FFE1AD7B47F005E8BF6 /* SXSickKindCell.m */; };
+		1D6340011AD7B872005E8BF6 /* Woman.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D6340001AD7B872005E8BF6 /* Woman.plist */; };
+		1D6340041AD7C2C2005E8BF6 /* SXSickDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6340031AD7C2C2005E8BF6 /* SXSickDetailCell.m */; };
 		1D7781B21AD618C300528041 /* SXMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781B11AD618C300528041 /* SXMainTabBarController.m */; };
 		1D7781B91AD61DA500528041 /* SXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781B81AD61DA500528041 /* SXTabBar.m */; };
 		1D7781BC1AD61DB800528041 /* SXBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781BB1AD61DB800528041 /* SXBarButton.m */; };
@@ -58,6 +62,13 @@
 		1D3443F81AD57A6200908D80 /* SXBaiduDoctorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SXBaiduDoctorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3443FD1AD57A6200908D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D3443FE1AD57A6200908D80 /* SXBaiduDoctorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXBaiduDoctorTests.m; sourceTree = "<group>"; };
+		1D633FFA1AD7B45C005E8BF6 /* SXSickController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXSickController.h; sourceTree = "<group>"; };
+		1D633FFB1AD7B45C005E8BF6 /* SXSickController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXSickController.m; sourceTree = "<group>"; };
+		1D633FFD1AD7B47F005E8BF6 /* SXSickKindCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXSickKindCell.h; sourceTree = "<group>"; };
+		1D633FFE1AD7B47F005E8BF6 /* SXSickKindCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXSickKindCell.m; sourceTree = "<group>"; };
+		1D6340001AD7B872005E8BF6 /* Woman.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Woman.plist; sourceTree = "<group>"; };
+		1D6340021AD7C2C2005E8BF6 /* SXSickDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXSickDetailCell.h; sourceTree = "<group>"; };
+		1D6340031AD7C2C2005E8BF6 /* SXSickDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXSickDetailCell.m; sourceTree = "<group>"; };
 		1D7781B01AD618C300528041 /* SXMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXMainTabBarController.h; sourceTree = "<group>"; };
 		1D7781B11AD618C300528041 /* SXMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXMainTabBarController.m; sourceTree = "<group>"; };
 		1D7781B71AD61DA500528041 /* SXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTabBar.h; sourceTree = "<group>"; };
@@ -116,6 +127,7 @@
 				1D7781BB1AD61DB800528041 /* SXBarButton.m */,
 				1D3443E61AD57A6200908D80 /* AppDelegate.h */,
 				1D3443E71AD57A6200908D80 /* AppDelegate.m */,
+				1D6340001AD7B872005E8BF6 /* Woman.plist */,
 				1D3443EC1AD57A6200908D80 /* Main.storyboard */,
 				1D3443EF1AD57A6200908D80 /* Images.xcassets */,
 				1D3443F11AD57A6200908D80 /* LaunchScreen.xib */,
@@ -169,6 +181,12 @@
 				1D199FAC1AD6862C009D902F /* SXGuideController.m */,
 				1DA13F351AD696C90012F6E8 /* SXSexButton.h */,
 				1DA13F361AD696C90012F6E8 /* SXSexButton.m */,
+				1D633FFA1AD7B45C005E8BF6 /* SXSickController.h */,
+				1D633FFB1AD7B45C005E8BF6 /* SXSickController.m */,
+				1D633FFD1AD7B47F005E8BF6 /* SXSickKindCell.h */,
+				1D633FFE1AD7B47F005E8BF6 /* SXSickKindCell.m */,
+				1D6340021AD7C2C2005E8BF6 /* SXSickDetailCell.h */,
+				1D6340031AD7C2C2005E8BF6 /* SXSickDetailCell.m */,
 			);
 			path = guide;
 			sourceTree = "<group>";
@@ -295,6 +313,7 @@
 				1D3443F31AD57A6200908D80 /* LaunchScreen.xib in Resources */,
 				1D3443F01AD57A6200908D80 /* Images.xcassets in Resources */,
 				1D199FA11AD65B94009D902F /* SXTbvHeaderView.xib in Resources */,
+				1D6340011AD7B872005E8BF6 /* Woman.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,8 +331,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D633FFF1AD7B47F005E8BF6 /* SXSickKindCell.m in Sources */,
+				1D6340041AD7C2C2005E8BF6 /* SXSickDetailCell.m in Sources */,
 				1D199F9F1AD644B0009D902F /* UIView+Frame.m in Sources */,
 				1D7781BC1AD61DB800528041 /* SXBarButton.m in Sources */,
+				1D633FFC1AD7B45C005E8BF6 /* SXSickController.m in Sources */,
 				1D7781B91AD61DA500528041 /* SXTabBar.m in Sources */,
 				1D3443E81AD57A6200908D80 /* AppDelegate.m in Sources */,
 				1D199FAA1AD66592009D902F /* SXAppointmentController.m in Sources */,
