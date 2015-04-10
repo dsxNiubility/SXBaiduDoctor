@@ -28,6 +28,10 @@
 		1D63400B1AD80C96005E8BF6 /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D63400A1AD80C96005E8BF6 /* Guide.storyboard */; };
 		1D63400D1AD80CA3005E8BF6 /* Yuyue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D63400C1AD80CA3005E8BF6 /* Yuyue.storyboard */; };
 		1D63400F1AD80CB4005E8BF6 /* Individual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D63400E1AD80CB4005E8BF6 /* Individual.storyboard */; };
+		1D6340121AD813C0005E8BF6 /* SXMyYYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6340111AD813C0005E8BF6 /* SXMyYYController.m */; };
+		1D6340151AD813F2005E8BF6 /* SXMyPJController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6340141AD813F2005E8BF6 /* SXMyPJController.m */; };
+		1D6340181AD81402005E8BF6 /* SXMyTZController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6340171AD81402005E8BF6 /* SXMyTZController.m */; };
+		1D63401B1AD81416005E8BF6 /* SXMySZController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D63401A1AD81416005E8BF6 /* SXMySZController.m */; };
 		1D7781B21AD618C300528041 /* SXMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781B11AD618C300528041 /* SXMainTabBarController.m */; };
 		1D7781B91AD61DA500528041 /* SXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781B81AD61DA500528041 /* SXTabBar.m */; };
 		1D7781BC1AD61DB800528041 /* SXBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781BB1AD61DB800528041 /* SXBarButton.m */; };
@@ -77,9 +81,17 @@
 		1D6340051AD7DD83005E8BF6 /* SXRoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXRoomController.h; sourceTree = "<group>"; };
 		1D6340061AD7DD83005E8BF6 /* SXRoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXRoomController.m; sourceTree = "<group>"; };
 		1D6340081AD7DEFD005E8BF6 /* Department.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Department.plist; sourceTree = "<group>"; };
-		1D63400A1AD80C96005E8BF6 /* Guide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
-		1D63400C1AD80CA3005E8BF6 /* Yuyue.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Yuyue.storyboard; sourceTree = "<group>"; };
-		1D63400E1AD80CB4005E8BF6 /* Individual.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Individual.storyboard; sourceTree = "<group>"; };
+		1D63400A1AD80C96005E8BF6 /* Guide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Guide.storyboard; path = ../../Guide.storyboard; sourceTree = "<group>"; };
+		1D63400C1AD80CA3005E8BF6 /* Yuyue.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Yuyue.storyboard; path = ../../Yuyue.storyboard; sourceTree = "<group>"; };
+		1D63400E1AD80CB4005E8BF6 /* Individual.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Individual.storyboard; path = ../../Individual.storyboard; sourceTree = "<group>"; };
+		1D6340101AD813C0005E8BF6 /* SXMyYYController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXMyYYController.h; sourceTree = "<group>"; };
+		1D6340111AD813C0005E8BF6 /* SXMyYYController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXMyYYController.m; sourceTree = "<group>"; };
+		1D6340131AD813F2005E8BF6 /* SXMyPJController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXMyPJController.h; sourceTree = "<group>"; };
+		1D6340141AD813F2005E8BF6 /* SXMyPJController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXMyPJController.m; sourceTree = "<group>"; };
+		1D6340161AD81402005E8BF6 /* SXMyTZController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXMyTZController.h; sourceTree = "<group>"; };
+		1D6340171AD81402005E8BF6 /* SXMyTZController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXMyTZController.m; sourceTree = "<group>"; };
+		1D6340191AD81416005E8BF6 /* SXMySZController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXMySZController.h; sourceTree = "<group>"; };
+		1D63401A1AD81416005E8BF6 /* SXMySZController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXMySZController.m; sourceTree = "<group>"; };
 		1D7781B01AD618C300528041 /* SXMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SXMainTabBarController.h; path = ../../SXMainTabBarController.h; sourceTree = "<group>"; };
 		1D7781B11AD618C300528041 /* SXMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SXMainTabBarController.m; path = ../../SXMainTabBarController.m; sourceTree = "<group>"; };
 		1D7781B71AD61DA500528041 /* SXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SXTabBar.h; path = ../../SXTabBar.h; sourceTree = "<group>"; };
@@ -143,10 +155,6 @@
 			children = (
 				1D6340081AD7DEFD005E8BF6 /* Department.plist */,
 				1D6340001AD7B872005E8BF6 /* Woman.plist */,
-				1D3443EC1AD57A6200908D80 /* Main.storyboard */,
-				1D63400A1AD80C96005E8BF6 /* Guide.storyboard */,
-				1D63400C1AD80CA3005E8BF6 /* Yuyue.storyboard */,
-				1D63400E1AD80CB4005E8BF6 /* Individual.storyboard */,
 				1D3443F11AD57A6200908D80 /* LaunchScreen.xib */,
 				1D3443E31AD57A6200908D80 /* Info.plist */,
 				1D3443E41AD57A6200908D80 /* main.m */,
@@ -186,6 +194,7 @@
 		1D7781BE1AD6220600528041 /* guide */ = {
 			isa = PBXGroup;
 			children = (
+				1D63400A1AD80C96005E8BF6 /* Guide.storyboard */,
 				1D199FAB1AD6862C009D902F /* SXGuideController.h */,
 				1D199FAC1AD6862C009D902F /* SXGuideController.m */,
 				1DA13F351AD696C90012F6E8 /* SXSexButton.h */,
@@ -203,11 +212,20 @@
 		1D7781BF1AD6220600528041 /* individual */ = {
 			isa = PBXGroup;
 			children = (
+				1D63400E1AD80CB4005E8BF6 /* Individual.storyboard */,
 				1D199FA51AD65E27009D902F /* SXMeController.h */,
 				1D199FA61AD65E27009D902F /* SXMeController.m */,
 				1D199FA21AD65D36009D902F /* SXTbvHeaderView.h */,
 				1D199FA31AD65D36009D902F /* SXTbvHeaderView.m */,
 				1D199FA01AD65B94009D902F /* SXTbvHeaderView.xib */,
+				1D6340101AD813C0005E8BF6 /* SXMyYYController.h */,
+				1D6340111AD813C0005E8BF6 /* SXMyYYController.m */,
+				1D6340131AD813F2005E8BF6 /* SXMyPJController.h */,
+				1D6340141AD813F2005E8BF6 /* SXMyPJController.m */,
+				1D6340161AD81402005E8BF6 /* SXMyTZController.h */,
+				1D6340171AD81402005E8BF6 /* SXMyTZController.m */,
+				1D6340191AD81416005E8BF6 /* SXMySZController.h */,
+				1D63401A1AD81416005E8BF6 /* SXMySZController.m */,
 			);
 			path = individual;
 			sourceTree = "<group>";
@@ -215,6 +233,7 @@
 		1D7781C01AD6220600528041 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				1D3443EC1AD57A6200908D80 /* Main.storyboard */,
 				1D7781B01AD618C300528041 /* SXMainTabBarController.h */,
 				1D7781B11AD618C300528041 /* SXMainTabBarController.m */,
 				1D7781B71AD61DA500528041 /* SXTabBar.h */,
@@ -237,6 +256,7 @@
 		1D7781C21AD6220600528041 /* yuyue */ = {
 			isa = PBXGroup;
 			children = (
+				1D63400C1AD80CA3005E8BF6 /* Yuyue.storyboard */,
 				1D199FA81AD66592009D902F /* SXAppointmentController.h */,
 				1D199FA91AD66592009D902F /* SXAppointmentController.m */,
 				1D6340051AD7DD83005E8BF6 /* SXRoomController.h */,
@@ -356,15 +376,19 @@
 				1D6340041AD7C2C2005E8BF6 /* SXSickDetailCell.m in Sources */,
 				1D199F9F1AD644B0009D902F /* UIView+Frame.m in Sources */,
 				1D6340071AD7DD83005E8BF6 /* SXRoomController.m in Sources */,
+				1D6340121AD813C0005E8BF6 /* SXMyYYController.m in Sources */,
 				1D7781BC1AD61DB800528041 /* SXBarButton.m in Sources */,
+				1D6340181AD81402005E8BF6 /* SXMyTZController.m in Sources */,
 				1D633FFC1AD7B45C005E8BF6 /* SXSickController.m in Sources */,
 				1D7781B91AD61DA500528041 /* SXTabBar.m in Sources */,
 				1D3443E81AD57A6200908D80 /* AppDelegate.m in Sources */,
 				1D199FAA1AD66592009D902F /* SXAppointmentController.m in Sources */,
+				1D6340151AD813F2005E8BF6 /* SXMyPJController.m in Sources */,
 				1D199FAD1AD6862C009D902F /* SXGuideController.m in Sources */,
 				1D199FA71AD65E27009D902F /* SXMeController.m in Sources */,
 				1D3443E51AD57A6200908D80 /* main.m in Sources */,
 				1DA13F371AD696C90012F6E8 /* SXSexButton.m in Sources */,
+				1D63401B1AD81416005E8BF6 /* SXMySZController.m in Sources */,
 				1D7781B21AD618C300528041 /* SXMainTabBarController.m in Sources */,
 				1D199FA41AD65D36009D902F /* SXTbvHeaderView.m in Sources */,
 			);
@@ -395,6 +419,7 @@
 				1D3443ED1AD57A6200908D80 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		1D3443F11AD57A6200908D80 /* LaunchScreen.xib */ = {
