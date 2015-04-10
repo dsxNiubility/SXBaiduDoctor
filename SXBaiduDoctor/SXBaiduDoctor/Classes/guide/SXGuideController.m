@@ -39,6 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     [self sexClick:self.manBtn];
 }
 

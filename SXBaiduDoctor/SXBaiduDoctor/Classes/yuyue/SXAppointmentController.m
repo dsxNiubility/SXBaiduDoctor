@@ -8,8 +8,12 @@
 
 #import "SXAppointmentController.h"
 
+#define SXRoomChangeNotification @"SXRoomChangeNotification"
+
 @interface SXAppointmentController ()
 @property (weak, nonatomic) IBOutlet UIView *centerView;
+@property (weak, nonatomic) IBOutlet UIButton *roomBtn;
+@property (weak, nonatomic) IBOutlet UIButton *choiceBtn;
 
 @end
 
@@ -24,8 +28,17 @@
     self.centerView.layer.cornerRadius = 20;
 //    self.centerView.layer.masksToBounds = YES;
     self.centerView.clipsToBounds = YES;
+    
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(changeWithInfo:) name:SXRoomChangeNotification object:nil];
 }
 
+- (void)changeWithInfo:(NSNotification *)no
+{
+    [self.roomBtn setTitle:no.userInfo[@"name"] forState:UIControlStateNormal];
+    [self.roomBtn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    self.choiceBtn.enabled = YES;
+}
 
 - (IBAction)choceRoom:(id)sender {
     NSLog(@"选择科室");

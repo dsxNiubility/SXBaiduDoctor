@@ -23,6 +23,8 @@
 		1D633FFF1AD7B47F005E8BF6 /* SXSickKindCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D633FFE1AD7B47F005E8BF6 /* SXSickKindCell.m */; };
 		1D6340011AD7B872005E8BF6 /* Woman.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D6340001AD7B872005E8BF6 /* Woman.plist */; };
 		1D6340041AD7C2C2005E8BF6 /* SXSickDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6340031AD7C2C2005E8BF6 /* SXSickDetailCell.m */; };
+		1D6340071AD7DD83005E8BF6 /* SXRoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6340061AD7DD83005E8BF6 /* SXRoomController.m */; };
+		1D6340091AD7DEFD005E8BF6 /* Department.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D6340081AD7DEFD005E8BF6 /* Department.plist */; };
 		1D7781B21AD618C300528041 /* SXMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781B11AD618C300528041 /* SXMainTabBarController.m */; };
 		1D7781B91AD61DA500528041 /* SXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781B81AD61DA500528041 /* SXTabBar.m */; };
 		1D7781BC1AD61DB800528041 /* SXBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7781BB1AD61DB800528041 /* SXBarButton.m */; };
@@ -69,6 +71,9 @@
 		1D6340001AD7B872005E8BF6 /* Woman.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Woman.plist; sourceTree = "<group>"; };
 		1D6340021AD7C2C2005E8BF6 /* SXSickDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXSickDetailCell.h; sourceTree = "<group>"; };
 		1D6340031AD7C2C2005E8BF6 /* SXSickDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXSickDetailCell.m; sourceTree = "<group>"; };
+		1D6340051AD7DD83005E8BF6 /* SXRoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXRoomController.h; sourceTree = "<group>"; };
+		1D6340061AD7DD83005E8BF6 /* SXRoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXRoomController.m; sourceTree = "<group>"; };
+		1D6340081AD7DEFD005E8BF6 /* Department.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Department.plist; sourceTree = "<group>"; };
 		1D7781B01AD618C300528041 /* SXMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXMainTabBarController.h; sourceTree = "<group>"; };
 		1D7781B11AD618C300528041 /* SXMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXMainTabBarController.m; sourceTree = "<group>"; };
 		1D7781B71AD61DA500528041 /* SXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTabBar.h; sourceTree = "<group>"; };
@@ -127,6 +132,7 @@
 				1D7781BB1AD61DB800528041 /* SXBarButton.m */,
 				1D3443E61AD57A6200908D80 /* AppDelegate.h */,
 				1D3443E71AD57A6200908D80 /* AppDelegate.m */,
+				1D6340081AD7DEFD005E8BF6 /* Department.plist */,
 				1D6340001AD7B872005E8BF6 /* Woman.plist */,
 				1D3443EC1AD57A6200908D80 /* Main.storyboard */,
 				1D3443EF1AD57A6200908D80 /* Images.xcassets */,
@@ -224,6 +230,8 @@
 			children = (
 				1D199FA81AD66592009D902F /* SXAppointmentController.h */,
 				1D199FA91AD66592009D902F /* SXAppointmentController.m */,
+				1D6340051AD7DD83005E8BF6 /* SXRoomController.h */,
+				1D6340061AD7DD83005E8BF6 /* SXRoomController.m */,
 			);
 			path = yuyue;
 			sourceTree = "<group>";
@@ -312,6 +320,7 @@
 				1D3443EE1AD57A6200908D80 /* Main.storyboard in Resources */,
 				1D3443F31AD57A6200908D80 /* LaunchScreen.xib in Resources */,
 				1D3443F01AD57A6200908D80 /* Images.xcassets in Resources */,
+				1D6340091AD7DEFD005E8BF6 /* Department.plist in Resources */,
 				1D199FA11AD65B94009D902F /* SXTbvHeaderView.xib in Resources */,
 				1D6340011AD7B872005E8BF6 /* Woman.plist in Resources */,
 			);
@@ -334,6 +343,7 @@
 				1D633FFF1AD7B47F005E8BF6 /* SXSickKindCell.m in Sources */,
 				1D6340041AD7C2C2005E8BF6 /* SXSickDetailCell.m in Sources */,
 				1D199F9F1AD644B0009D902F /* UIView+Frame.m in Sources */,
+				1D6340071AD7DD83005E8BF6 /* SXRoomController.m in Sources */,
 				1D7781BC1AD61DB800528041 /* SXBarButton.m in Sources */,
 				1D633FFC1AD7B45C005E8BF6 /* SXSickController.m in Sources */,
 				1D7781B91AD61DA500528041 /* SXTabBar.m in Sources */,
