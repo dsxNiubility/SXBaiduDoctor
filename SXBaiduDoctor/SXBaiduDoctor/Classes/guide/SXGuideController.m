@@ -39,6 +39,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIImage *img = [UIImage imageNamed:@"nav.png"];
+    [self.navigationController.navigationBar setBackgroundImage:img forBarMetrics:UIBarMetricsDefault];
     
     [self sexClick:self.manBtn];
 }

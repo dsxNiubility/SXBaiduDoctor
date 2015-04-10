@@ -36,7 +36,7 @@
 - (void)changeWithInfo:(NSNotification *)no
 {
     [self.roomBtn setTitle:no.userInfo[@"name"] forState:UIControlStateNormal];
-    [self.roomBtn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    [self.roomBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     self.choiceBtn.enabled = YES;
 }
 

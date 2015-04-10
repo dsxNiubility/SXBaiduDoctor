@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIImage *img = [UIImage imageNamed:@"nav.png"];
+    [self.navigationController.navigationBar setBackgroundImage:img forBarMetrics:UIBarMetricsDefault];
     
     SXTbvHeaderView *tbvHeader = [SXTbvHeaderView headerView];
     self.tableView.tableHeaderView = tbvHeader;
