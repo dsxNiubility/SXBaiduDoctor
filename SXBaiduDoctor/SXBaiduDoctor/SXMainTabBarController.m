@@ -10,6 +10,7 @@
 #import "SXBarButton.h"
 #import "SXTabBar.h"
 
+
 @interface SXMainTabBarController ()<SXTabBarDelegate>
 
 @end
@@ -19,6 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIStoryboard *guideSB = [UIStoryboard storyboardWithName:@"Guide" bundle:nil];
+    UINavigationController *guideNav = guideSB.instantiateInitialViewController;
+    
+    UIStoryboard *yuyueSB = [UIStoryboard storyboardWithName:@"Yuyue" bundle:nil];
+    UINavigationController *yuyueNav = yuyueSB.instantiateInitialViewController;
+    
+    UIStoryboard *individualSB = [UIStoryboard storyboardWithName:@"Individual" bundle:nil];
+    UINavigationController *individualNav = individualSB.instantiateInitialViewController;
+    
+    self.viewControllers = @[guideNav,yuyueNav,individualNav];
+    
     SXTabBar *tabBar = [[SXTabBar alloc]init];
     tabBar.frame = self.tabBar.bounds;
     
@@ -27,6 +39,7 @@
 //    [self.tabBar setShadowImage:[UIImage imageNamed:@"shawdo"]];
     self.tabBar.backgroundImage = [UIImage imageNamed:@"shawdo"];
     tabBar.delegate = self;
+    
     
     [tabBar addImageView];
     

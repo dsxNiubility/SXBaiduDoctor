@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GUb-l8-0cy">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+    </dependencies>
+    <scenes>
+        <!--智能导诊-->
+        <scene sceneID="Qy0-YW-cWq">
+            <objects>
+                <navigationController id="GUb-l8-0cy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="智能导诊" image="menu_guide_default" id="hVf-gK-kZF"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IWC-oR-dTl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.28235294119999998" green="0.66274509800000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mqN-xZ-saT" kind="relationship" relationship="rootViewController" id="ydf-pC-Nbq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7T-nl-qUB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2022" y="139"/>
+        </scene>
+        <!--Guide Controller-->
+        <scene sceneID="Hqk-m9-bN4">
+            <objects>
+                <viewController id="mqN-xZ-saT" customClass="SXGuideController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iqd-y2-mbt"/>
+                        <viewControllerLayoutGuide type="bottom" id="3By-Zs-BGq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zf1-Wi-XIv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intelligence_background" translatesAutoresizingMaskIntoConstraints="NO" id="rAy-3G-EH9">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIm-sS-MO1" customClass="SXSexButton">
+                                <rect key="frame" x="26" y="456" width="35" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="女性" backgroundImage="intelligence_buttonBar_white">
+                                    <color key="titleColor" red="0.26274509800000001" green="0.66666666669999997" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="女性" backgroundImage="intelligence_buttonBar_blue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sexClick:" destination="mqN-xZ-saT" eventType="touchUpInside" id="SGm-jW-wIZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuR-ct-Z3X" customClass="SXSexButton">
+                                <rect key="frame" x="26" y="499" width="35" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="儿童" backgroundImage="intelligence_buttonBar_white">
+                                    <color key="titleColor" red="0.26274509800000001" green="0.66666666669999997" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="儿童" backgroundImage="intelligence_buttonBar_blue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sexClick:" destination="mqN-xZ-saT" eventType="touchUpInside" id="fpe-aW-3aL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvc-b0-cJ6" customClass="SXSexButton">
+                                <rect key="frame" x="26" y="413" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="RIs-Zh-4kF"/>
+                                    <constraint firstAttribute="height" constant="35" id="WEs-Xz-Mbe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="男性" backgroundImage="intelligence_buttonBar_white">
+                                    <color key="titleColor" red="0.28235294119999998" green="0.66274509800000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="男性" backgroundImage="intelligence_buttonBar_blue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sexClick:" destination="mqN-xZ-saT" eventType="touchUpInside" id="dUo-Cr-r9p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIS-zO-mhL">
+                                <rect key="frame" x="269" y="79" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UQe-lq-s1B"/>
+                                    <constraint firstAttribute="width" constant="90" id="hhQ-PJ-uuX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="其他全身症状">
+                                    <color key="titleColor" red="0.26274509800000001" green="0.66666666669999997" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQQ-JO-G65">
+                                <rect key="frame" x="299" y="504" width="60" height="30"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="order_button_bg_normal_60" translatesAutoresizingMaskIntoConstraints="NO" id="XrN-JD-a8h">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8BI-sS-AI6" userLabel="SwitchView">
+                                        <rect key="frame" x="6" y="0.0" width="80" height="30"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="workbench_btn88_a05" translatesAutoresizingMaskIntoConstraints="NO" id="QCG-oU-uL4">
+                                                <rect key="frame" x="27" y="2" width="26" height="26"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="背面" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWp-bf-6Ij">
+                                                <rect key="frame" x="55" y="8" width="24" height="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正面" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ee-3b-cUZ">
+                                                <rect key="frame" x="1" y="8" width="24" height="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tu-EI-7R0" userLabel="开关">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="switchBtnClick:" destination="mqN-xZ-saT" eventType="touchUpInside" id="v2K-ki-hXu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="48d-ZH-AXJ"/>
+                                    <constraint firstAttribute="width" constant="60" id="gGz-rj-lLi"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N88-uo-tvD" userLabel="男人正面">
+                                <rect key="frame" x="93" y="127" width="188" height="407"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="intelligence_body_male_front" translatesAutoresizingMaskIntoConstraints="NO" id="Ufh-2S-XwE">
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="407"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAj-5h-S6M" userLabel="头">
+                                        <rect key="frame" x="78" y="8" width="42" height="59"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0100"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11r-KQ-LoJ" userLabel="左胳膊">
+                                        <rect key="frame" x="27" y="80" width="143" height="117"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0108"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbj-Fh-Ez0" userLabel="胸">
+                                        <rect key="frame" x="62" y="82" width="73" height="46"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0110"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLG-AY-YtY" userLabel="腹">
+                                        <rect key="frame" x="67" y="123" width="64" height="56"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0111"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBQ-ly-BMr" userLabel="腿">
+                                        <rect key="frame" x="56" y="205" width="85" height="161"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0116"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpe-Te-eT2" userLabel="脚">
+                                        <rect key="frame" x="60" y="368" width="78" height="36"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0117"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyg-v7-MMW" userLabel="手">
+                                        <rect key="frame" x="13" y="194" width="172" height="48"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0109"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2e-vz-ZTm" userLabel="蛋">
+                                        <rect key="frame" x="62" y="181" width="73" height="41"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0115"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D9Q-dg-mgE" userLabel="女人正面">
+                                <rect key="frame" x="93" y="128" width="188" height="407"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="intelligence_body_female_front" translatesAutoresizingMaskIntoConstraints="NO" id="Iun-Iu-gqK">
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="407"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3v0-0B-kyi" userLabel="头">
+                                        <rect key="frame" x="81" y="16" width="35" height="51"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0200"/>
+                                        <connections>
+                                            <action selector="Head:" destination="mqN-xZ-saT" eventType="touchUpInside" id="AVZ-hb-LdL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSl-Rb-YwO" userLabel="左胳膊">
+                                        <rect key="frame" x="24" y="80" width="149" height="108"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0208"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vu-ci-wtm" userLabel="手">
+                                        <rect key="frame" x="4" y="187" width="188" height="44"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0209"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyr-bZ-j2F" userLabel="胸">
+                                        <rect key="frame" x="65" y="102" width="67" height="28"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0302"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlK-wI-h9P" userLabel="腹">
+                                        <rect key="frame" x="69" y="130" width="59" height="49"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0213"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfU-3K-lLl" userLabel="腿">
+                                        <rect key="frame" x="59" y="205" width="81" height="161"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0216"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qo8-bg-PGq" userLabel="脚">
+                                        <rect key="frame" x="54" y="368" width="93" height="36"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0217"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIc-6e-z01" userLabel="蛋">
+                                        <rect key="frame" x="62" y="174" width="73" height="41"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0215"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1GN-aY-Grb" userLabel="女人背面">
+                                <rect key="frame" x="93" y="128" width="188" height="427"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="intelligence_body_female_back" translatesAutoresizingMaskIntoConstraints="NO" id="138-rS-AUO">
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="407"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x42-83-JqP" userLabel="男人背面">
+                                <rect key="frame" x="93" y="127" width="188" height="427"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="intelligence_body_male_back" translatesAutoresizingMaskIntoConstraints="NO" id="omL-5y-Qxk">
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="407"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5b8-QQ-1Ua" userLabel="小孩背面">
+                                <rect key="frame" x="93" y="106" width="188" height="427"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="intelligence_body_child_back" translatesAutoresizingMaskIntoConstraints="NO" id="wdF-1X-guD">
+                                        <rect key="frame" x="0.0" y="22" width="196" height="407"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wxt-d0-Wti" userLabel="小孩正面">
+                                <rect key="frame" x="93" y="106" width="188" height="427"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="intelligence_body_child_front" translatesAutoresizingMaskIntoConstraints="NO" id="s6x-dg-5Gu">
+                                        <rect key="frame" x="0.0" y="22" width="196" height="407"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z66-f5-ZPk" userLabel="女人大脸">
+                                <rect key="frame" x="16" y="106" width="343" height="427"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="intelligence_body_female_bigFace" translatesAutoresizingMaskIntoConstraints="NO" id="1WK-mi-gYr">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="427"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hI0-wh-ir5" userLabel="眼睛">
+                                        <rect key="frame" x="116" y="154" width="121" height="44"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0202"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OB2-aE-rUw" userLabel="嘴巴">
+                                        <rect key="frame" x="136" y="224" width="70" height="30"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0204"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUv-Bb-qeD" userLabel="脑子">
+                                        <rect key="frame" x="77" y="29" width="188" height="117"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0201"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qll-J6-ACz" userLabel="鼻子">
+                                        <rect key="frame" x="156" y="176" width="31" height="52"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="intelligence_highlight_0203"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zD5-qw-PdQ">
+                                <rect key="frame" x="299" y="79" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="dTC-tZ-yxP"/>
+                                    <constraint firstAttribute="height" constant="30" id="wS3-u0-ukq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="返回">
+                                    <color key="titleColor" red="0.26274509800000001" green="0.66666666669999997" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="headBack:" destination="mqN-xZ-saT" eventType="touchUpInside" id="7Ju-Cl-Pyt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yvc-b0-cJ6" firstAttribute="leading" secondItem="sIm-sS-MO1" secondAttribute="leading" id="2FW-NY-LBF"/>
+                            <constraint firstAttribute="trailing" secondItem="RQQ-JO-G65" secondAttribute="trailing" constant="16" id="2X5-C9-KOu"/>
+                            <constraint firstItem="sIm-sS-MO1" firstAttribute="leading" secondItem="iuR-ct-Z3X" secondAttribute="leading" id="5TN-Id-LIL"/>
+                            <constraint firstItem="iuR-ct-Z3X" firstAttribute="top" secondItem="sIm-sS-MO1" secondAttribute="bottom" constant="8" id="HpU-lO-Xxe"/>
+                            <constraint firstItem="3By-Zs-BGq" firstAttribute="top" secondItem="rAy-3G-EH9" secondAttribute="bottom" id="IbH-h6-ztD"/>
+                            <constraint firstAttribute="trailing" secondItem="zD5-qw-PdQ" secondAttribute="trailing" constant="30" id="KaM-Qc-6wt"/>
+                            <constraint firstItem="yvc-b0-cJ6" firstAttribute="height" secondItem="sIm-sS-MO1" secondAttribute="height" id="Whx-Sf-uly"/>
+                            <constraint firstItem="sIm-sS-MO1" firstAttribute="top" secondItem="yvc-b0-cJ6" secondAttribute="bottom" constant="8" id="Yo4-Sr-27j"/>
+                            <constraint firstItem="yvc-b0-cJ6" firstAttribute="leading" secondItem="Zf1-Wi-XIv" secondAttribute="leading" constant="26" id="Zga-Cn-I7X"/>
+                            <constraint firstItem="yvc-b0-cJ6" firstAttribute="width" secondItem="sIm-sS-MO1" secondAttribute="width" id="ZrV-E6-h5T"/>
+                            <constraint firstItem="rAy-3G-EH9" firstAttribute="leading" secondItem="Zf1-Wi-XIv" secondAttribute="leading" id="bH1-aB-Ngl"/>
+                            <constraint firstItem="sIm-sS-MO1" firstAttribute="width" secondItem="iuR-ct-Z3X" secondAttribute="width" id="drJ-Cj-J7e"/>
+                            <constraint firstAttribute="trailing" secondItem="WIS-zO-mhL" secondAttribute="trailing" constant="16" id="efc-6z-7Ky"/>
+                            <constraint firstItem="zD5-qw-PdQ" firstAttribute="top" secondItem="iqd-y2-mbt" secondAttribute="bottom" constant="15" id="faA-xQ-eDE"/>
+                            <constraint firstItem="rAy-3G-EH9" firstAttribute="top" secondItem="iqd-y2-mbt" secondAttribute="bottom" id="go8-oW-qW0"/>
+                            <constraint firstItem="yvc-b0-cJ6" firstAttribute="top" secondItem="iqd-y2-mbt" secondAttribute="bottom" constant="349" id="hhc-Ea-Kr5"/>
+                            <constraint firstAttribute="trailing" secondItem="rAy-3G-EH9" secondAttribute="trailing" id="m47-wi-SDJ"/>
+                            <constraint firstItem="iuR-ct-Z3X" firstAttribute="centerY" secondItem="RQQ-JO-G65" secondAttribute="centerY" constant="-2.5" id="xR1-AL-CJ0"/>
+                            <constraint firstItem="sIm-sS-MO1" firstAttribute="height" secondItem="iuR-ct-Z3X" secondAttribute="height" id="yPl-7h-3KV"/>
+                            <constraint firstItem="WIS-zO-mhL" firstAttribute="top" secondItem="iqd-y2-mbt" secondAttribute="bottom" constant="15" id="zTW-60-r0t"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0ck-tS-gHU">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="KUm-er-pWy"/>
+                        <view key="titleView" contentMode="scaleToFill" id="dRF-Hi-hzf">
+                            <rect key="frame" x="113" y="7" width="150" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topb" translatesAutoresizingMaskIntoConstraints="NO" id="Dbc-sD-oaz">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7d-zx-EZP" userLabel="列表button">
+                                    <rect key="frame" x="71" y="0.0" width="79" height="30"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="listBtnClick:" destination="mqN-xZ-saT" eventType="touchUpInside" id="H5k-KO-pdi"/>
+                                        <segue destination="yAL-s1-hjH" kind="push" id="Rs6-AV-ehp"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bigSwitchView" destination="RQQ-JO-G65" id="IqP-wz-bmM"/>
+                        <outlet property="bodyimgView" destination="Ufh-2S-XwE" id="DEs-NT-ra0"/>
+                        <outlet property="childBack" destination="5b8-QQ-1Ua" id="RBH-mW-eQb"/>
+                        <outlet property="childBtn" destination="iuR-ct-Z3X" id="V5r-rg-6R9"/>
+                        <outlet property="childFront" destination="Wxt-d0-Wti" id="FSO-Sc-xDx"/>
+                        <outlet property="headBackBtn" destination="zD5-qw-PdQ" id="dou-aw-iwU"/>
+                        <outlet property="manBack" destination="x42-83-JqP" id="liF-dS-Sb0"/>
+                        <outlet property="manBtn" destination="yvc-b0-cJ6" id="HyU-UX-b2c"/>
+                        <outlet property="manFront" destination="N88-uo-tvD" id="lWt-eL-r5X"/>
+                        <outlet property="otherSickBtn" destination="WIS-zO-mhL" id="cCq-T8-kLP"/>
+                        <outlet property="switchView" destination="8BI-sS-AI6" id="vS7-KG-aiM"/>
+                        <outlet property="womanBtn" destination="sIm-sS-MO1" id="xzC-oC-yQg"/>
+                        <outlet property="womanFace" destination="Z66-f5-ZPk" id="aAB-pX-Iu0"/>
+                        <outlet property="womanFront" destination="D9Q-dg-mgE" id="pBA-BV-zF4"/>
+                        <outlet property="womenBack" destination="1GN-aY-Grb" id="Hvc-lL-Auk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dCt-3Y-Ajn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1543.5" y="144.5"/>
+        </scene>
+        <!--症状列表-->
+        <scene sceneID="lLQ-vf-q2Y">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="yAL-s1-hjH" customClass="SXSickController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AOj-dF-FMy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ye3-9V-l30"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mNx-1i-01q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Rbe-oB-pRT">
+                                <rect key="frame" x="0.0" y="0.0" width="136" height="667"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="lyI-CG-3fL"/>
+                                </constraints>
+                                <color key="sectionIndexBackgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="SickKindCell" id="sgH-71-W3I" customClass="SXSickKindCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sgH-71-W3I" id="nhX-aT-LEl">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7D-Fi-eoq">
+                                                    <rect key="frame" x="0.0" y="43" width="136" height="1"/>
+                                                    <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="FPS-0a-vZE"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="常见" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOh-5s-F9R">
+                                                    <rect key="frame" x="19" y="11" width="34" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" red="0.26274509800000001" green="0.66666666669999997" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwp-3G-7F4">
+                                                    <rect key="frame" x="135" y="0.0" width="1" height="44"/>
+                                                    <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="1" id="efb-GK-rhe"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="uwp-3G-7F4" secondAttribute="bottom" id="1X7-Bd-C3o"/>
+                                                <constraint firstItem="kOh-5s-F9R" firstAttribute="top" secondItem="nhX-aT-LEl" secondAttribute="top" constant="11" id="KrG-KQ-tar"/>
+                                                <constraint firstAttribute="trailing" secondItem="o7D-Fi-eoq" secondAttribute="trailing" id="PsE-XV-RDT"/>
+                                                <constraint firstItem="uwp-3G-7F4" firstAttribute="top" secondItem="nhX-aT-LEl" secondAttribute="top" id="a9f-D1-kRy"/>
+                                                <constraint firstItem="kOh-5s-F9R" firstAttribute="leading" secondItem="nhX-aT-LEl" secondAttribute="leading" constant="19" id="d7V-lc-7xS"/>
+                                                <constraint firstAttribute="bottom" secondItem="o7D-Fi-eoq" secondAttribute="bottom" id="hpC-bb-E2v"/>
+                                                <constraint firstItem="o7D-Fi-eoq" firstAttribute="leading" secondItem="nhX-aT-LEl" secondAttribute="leading" id="qSc-VY-bb0"/>
+                                                <constraint firstAttribute="trailing" secondItem="uwp-3G-7F4" secondAttribute="trailing" id="viQ-ff-3Sl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="kOh-5s-F9R" id="wbu-Bc-oyF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="yAL-s1-hjH" id="pGl-e2-PUD"/>
+                                    <outlet property="delegate" destination="yAL-s1-hjH" id="UOG-A4-FGK"/>
+                                </connections>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yMu-qe-Uyc">
+                                <rect key="frame" x="136" y="64" width="239" height="603"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="X1l-8h-PBr">
+                                        <rect key="frame" x="0.0" y="0.0" width="239" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X1l-8h-PBr" id="rCZ-un-3fh">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SickDetailCell" id="mE9-ZU-Z0p" customClass="SXSickDetailCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="239" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mE9-ZU-Z0p" id="FkZ-TM-2VG">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="啥病" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uq-T3-2ie">
+                                                    <rect key="frame" x="21" y="11" width="34" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8uq-T3-2ie" firstAttribute="top" secondItem="FkZ-TM-2VG" secondAttribute="top" constant="11" id="RPX-N3-N2a"/>
+                                                <constraint firstItem="8uq-T3-2ie" firstAttribute="leading" secondItem="FkZ-TM-2VG" secondAttribute="leading" constant="21" id="j4T-RA-3Mr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="8uq-T3-2ie" id="iXQ-6Z-8Gs"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="yAL-s1-hjH" id="XpM-F9-PSY"/>
+                                    <outlet property="delegate" destination="yAL-s1-hjH" id="Hq7-Mx-orj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yMu-qe-Uyc" firstAttribute="leading" secondItem="Rbe-oB-pRT" secondAttribute="trailing" id="Mly-WU-PpL"/>
+                            <constraint firstItem="Rbe-oB-pRT" firstAttribute="leading" secondItem="mNx-1i-01q" secondAttribute="leading" id="SpF-JM-4Ku"/>
+                            <constraint firstItem="Ye3-9V-l30" firstAttribute="top" secondItem="Rbe-oB-pRT" secondAttribute="bottom" id="WwB-7k-UKd"/>
+                            <constraint firstItem="Ye3-9V-l30" firstAttribute="top" secondItem="yMu-qe-Uyc" secondAttribute="bottom" id="Xrz-Aw-ynw"/>
+                            <constraint firstItem="Rbe-oB-pRT" firstAttribute="top" secondItem="mNx-1i-01q" secondAttribute="top" id="hIo-AI-Esx"/>
+                            <constraint firstItem="yMu-qe-Uyc" firstAttribute="top" secondItem="mNx-1i-01q" secondAttribute="top" constant="64" id="s0W-qe-Kp6"/>
+                            <constraint firstAttribute="trailing" secondItem="yMu-qe-Uyc" secondAttribute="trailing" id="wad-7W-4j5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="症状列表" id="SD1-uk-f3C"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableViewLeft" destination="Rbe-oB-pRT" id="iVi-Ej-0KK"/>
+                        <outlet property="tableViewRight" destination="yMu-qe-Uyc" id="OgU-TL-afc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NnO-tV-NAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1037.5" y="144.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="intelligence_background" width="360" height="516"/>
+        <image name="intelligence_body_child_back" width="187" height="345"/>
+        <image name="intelligence_body_child_front" width="185" height="345"/>
+        <image name="intelligence_body_female_back" width="182" height="390"/>
+        <image name="intelligence_body_female_bigFace" width="370" height="379"/>
+        <image name="intelligence_body_female_front" width="182" height="390"/>
+        <image name="intelligence_body_male_back" width="169" height="395"/>
+        <image name="intelligence_body_male_front" width="171" height="400"/>
+        <image name="intelligence_buttonBar_blue" width="35" height="35"/>
+        <image name="intelligence_buttonBar_white" width="35" height="35"/>
+        <image name="intelligence_highlight_0100" width="45" height="61"/>
+        <image name="intelligence_highlight_0108" width="142" height="120"/>
+        <image name="intelligence_highlight_0109" width="172" height="45"/>
+        <image name="intelligence_highlight_0110" width="76" height="42"/>
+        <image name="intelligence_highlight_0111" width="72" height="61"/>
+        <image name="intelligence_highlight_0115" width="76" height="35"/>
+        <image name="intelligence_highlight_0116" width="80" height="168"/>
+        <image name="intelligence_highlight_0117" width="74" height="35"/>
+        <image name="intelligence_highlight_0200" width="45" height="56"/>
+        <image name="intelligence_highlight_0201" width="191" height="125"/>
+        <image name="intelligence_highlight_0202" width="128" height="29"/>
+        <image name="intelligence_highlight_0203" width="35" height="58"/>
+        <image name="intelligence_highlight_0204" width="56" height="24"/>
+        <image name="intelligence_highlight_0208" width="148" height="110"/>
+        <image name="intelligence_highlight_0209" width="183" height="38"/>
+        <image name="intelligence_highlight_0213" width="54" height="45"/>
+        <image name="intelligence_highlight_0215" width="77" height="39"/>
+        <image name="intelligence_highlight_0216" width="78" height="162"/>
+        <image name="intelligence_highlight_0217" width="90" height="33"/>
+        <image name="intelligence_highlight_0302" width="121" height="39"/>
+        <image name="menu_guide_default" width="23" height="25"/>
+        <image name="order_button_bg_normal_60" width="29" height="30"/>
+        <image name="topb" width="181" height="31"/>
+        <image name="workbench_btn88_a05" width="46" height="44"/>
+    </resources>
+</document>
