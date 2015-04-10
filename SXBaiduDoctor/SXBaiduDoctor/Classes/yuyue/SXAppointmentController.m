@@ -26,6 +26,7 @@
     self.centerView.clipsToBounds = YES;
 }
 
+
 - (IBAction)choceRoom:(id)sender {
     NSLog(@"选择科室");
 }

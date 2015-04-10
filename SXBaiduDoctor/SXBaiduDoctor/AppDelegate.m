@@ -16,6 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    UIApplication *app = [UIApplication sharedApplication];
+    [app setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
     // Override point for customization after application launch.
     return YES;
 }
