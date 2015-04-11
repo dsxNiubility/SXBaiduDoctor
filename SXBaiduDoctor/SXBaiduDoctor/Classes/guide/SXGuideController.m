@@ -8,6 +8,7 @@
 
 #import "SXGuideController.h"
 #import "SXSexButton.h"
+#import "SXSickController.h"
 #import "UIView+Frame.h"
 
 @interface SXGuideController ()
@@ -29,6 +30,7 @@
 @property (weak, nonatomic) IBOutlet UIView *childFront;
 @property (weak, nonatomic) IBOutlet UIView *womanFace;
 
+@property (nonatomic,assign) NSInteger selIndex;
 @property(nonatomic,strong) UIButton *selButton;
 @property(nonatomic,strong) UIView *selView;
 
@@ -144,6 +146,17 @@
 
 - (IBAction)listBtnClick:(UIButton *)sender {
     NSLog(@"跳转列表");
+    self.selIndex = 0;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    SXSickController *sc = segue.destinationViewController;
+    sc.selIndex = self.selIndex;
+}
+- (IBAction)womanBodyClick:(UIButton *)sender {
+    self.selIndex = sender.tag - 100;
+    [self performSegueWithIdentifier:@"BodyToList" sender:nil];
 }
 
 @end

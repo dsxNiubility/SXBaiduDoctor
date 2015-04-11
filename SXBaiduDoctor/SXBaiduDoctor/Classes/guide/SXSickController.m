@@ -29,20 +29,23 @@
     NSArray *allList = [NSArray arrayWithContentsOfFile:path];
     self.allList = allList;
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
     self.tableViewLeft.showsVerticalScrollIndicator = NO;
     self.tableViewRight.showsVerticalScrollIndicator = NO;
     
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
-//    [self.tableViewLeft reloadData];
-    
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:4 inSection:0];
+    NSIndexPath *bottomIndexPath = [NSIndexPath indexPathForRow:self.allList.count - 1 inSection:0];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.selIndex inSection:0];
     self.indexPath = indexPath;
-//    SXSickKindCell *cell = (SXSickKindCell *)[self tableView:self.tableViewLeft cellForRowAtIndexPath:indexPath];
-//    cell.selected = YES;
-    [self tableView:self.tableViewLeft didSelectRowAtIndexPath:self.indexPath];
+    
+    if (self.selIndex > 12) {
+        [self.tableViewLeft scrollToRowAtIndexPath:bottomIndexPath atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+    }
+    
+    [self.tableViewLeft selectRowAtIndexPath:self.indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
     
     NSLog(@"%ld",[self.tableViewLeft indexPathForSelectedRow].row);
 }
@@ -70,12 +73,6 @@
         NSDictionary *sickDict = self.allList[indexPath.row];
         cell.name = sickDict[@"first"];
         
-//        if (indexPath.row == 4) {
-//            cell.selected = YES;
-//            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:4 inSection:0];
-//            [self tableView:self.tableViewLeft didSelectRowAtIndexPath:indexPath];
-//        }
-        
         return cell;
     }else{
         SXSickDetailCell *cell = [SXSickDetailCell detailCellWithTbv:tableView];
@@ -96,7 +93,6 @@
         [self.tableViewRight reloadData];
         
     } else { // 右边
-        // 发送通知
         NSInteger leftSelectedRow = [self.tableViewLeft indexPathForSelectedRow].row;
         NSLog(@"左边第%ld行，右边第%ld行",leftSelectedRow,indexPath.row);
     }
