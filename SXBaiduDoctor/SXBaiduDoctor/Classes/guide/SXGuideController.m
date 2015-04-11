@@ -145,7 +145,6 @@
 }
 
 - (IBAction)listBtnClick:(UIButton *)sender {
-    NSLog(@"跳转列表");
     self.selIndex = 0;
 }
 

@@ -46,8 +46,6 @@
     }
     
     [self.tableViewLeft selectRowAtIndexPath:self.indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
-    
-    NSLog(@"%ld",[self.tableViewLeft indexPathForSelectedRow].row);
 }
 
 - (void)didReceiveMemoryWarning {
